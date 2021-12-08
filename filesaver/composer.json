@@ -1,0 +1,19 @@
+{
+    "name": "skycoder/laravel-filesaver",
+    "description": "A simple Laravel Filesaver package",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Skycoder",
+            "email": "akashcseuu026@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Skycoder\\LaravelFilesaver\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
