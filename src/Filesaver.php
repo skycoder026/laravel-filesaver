@@ -9,15 +9,6 @@ use Image;
 
 class Filesaver
 {
-    public function greet(String $name)
-    {
-        return 'Hello ' . $name . '! Welcome to Mynotepaper.com';
-    }
-
-    public function testData()
-    {
-        return 'i am from test';
-    }
 
     /*
      |--------------------------------------------------------------------------
@@ -43,7 +34,7 @@ class Filesaver
 
 
             // <!-- create upload directory -->
-            $directory   = './assets/' . $base_path . '/' . date('Y') . '/';
+            $directory   = './assets/uploads/' . $base_path . '/' . date('Y') . '/';
 
 
 
@@ -79,7 +70,8 @@ class Filesaver
         if ($file) {
 
             try {
-                $basePath = 'uploads/' . $basePath;
+
+                $basePath = './assets/uploads/' . $basePath;
 
                 $image_name     = time() . '.' . $file->getClientOriginalExtension();
 
