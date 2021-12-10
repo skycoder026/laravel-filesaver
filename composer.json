@@ -1,8 +1,15 @@
 {
     "name": "skycoder/laravel-filesaver",
-    "description": "A simple Laravel Filesaver package",
-    "type": "project",
+    "description": "Laravel Filesaver",
+    "homepage": "https://github.com/skycoder026/laravel-filesaver",
     "license": "MIT",
+    "keywords": [
+        "laravel-filesaver",
+        "filesaver",
+        "asmakash",
+        "akashcsem",
+        "skycoder"
+    ],
     "authors": [
         {
             "name": "Skycoder",
@@ -24,6 +31,10 @@
             ]
         }
     },
-    "minimum-stability": "dev",
-    "require": {}
+    "minimum-stability": "stable",
+    "readme": "./readme.md",
+    "time": "2021-12-09",
+    "require": {
+        "php": "^7.2.5"
+    }
 }
