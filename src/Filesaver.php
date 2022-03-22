@@ -29,7 +29,7 @@ class Filesaver
 
 
             // <!-- create unique file name -->
-            $new_file_name   = time() . '.' . $uploaded_file->getClientOriginalExtension();
+            $new_file_name   = $model->id . time() . '-' . rand(11111, 999999) . '.' . $uploaded_file->getClientOriginalExtension();
 
 
 
@@ -73,7 +73,7 @@ class Filesaver
 
                 $basePath = './assets/uploads/' . $basePath;
 
-                $image_name     = time() . '.' . $file->getClientOriginalExtension();
+                $image_name     = $model->id . time() . '-' . rand(11111, 999999) . '.' . $uploaded_file->getClientOriginalExtension();
 
                 if (file_exists($basePath . '/' . $model->image) && $model->image != '') {
                     unlink($basePath . '/' . $model->image);
