@@ -29,7 +29,7 @@ class Filesaver
 
 
             // <!-- create unique file name -->
-            $new_file_name   = $model->id . time() . '-' . rand(11111, 999999) . '.' . $uploaded_file->getClientOriginalExtension();
+            $new_file_name   = $model->id . '-' . time() . '-' . rand(11111, 999999) . '.' . $uploaded_file->getClientOriginalExtension();
 
 
 
